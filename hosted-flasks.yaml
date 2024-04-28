@@ -1,0 +1,9 @@
+hello:
+  src: hello
+  path: /hello
+  hostname: hello.app.homemadebycvg.com
+
+letmelearn:
+  src: letmelearn
+  hostname: letmelearn.app.homemadebycvg.com
+  app: letmelearn.letmelearn:server

@@ -1,0 +1,3 @@
+[submodule "letmelearn"]
+	path = letmelearn
+	url = https://github.com/christophevg/letmelearn.git
