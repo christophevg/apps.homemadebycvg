@@ -4,6 +4,11 @@ hello:
   hostname: hello.app.homemadebycvg.com
 
 debug:
-  src: debug
+  src: debug/debug
   path: /debug
-  app: debug.debug:server
+  app: debug:server
+
+letmelearn:
+  src: letmelearn/letmelearn
+  hostname: letmelearn.app.homemadebycvg.com
+  app: letmelearn:server

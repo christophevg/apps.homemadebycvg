@@ -20,7 +20,7 @@ Flask-SocketIO==5.3.6
 greenlet==3.0.3
 gunicorn==22.0.0
 h11==0.14.0
-hosted-flasks==0.0.6
+hosted-flasks==0.0.7
 idna==3.7
 importlib_metadata==7.1.0
 itsdangerous==2.2.0

@@ -14,8 +14,11 @@ logging.getLogger().handlers[0].setFormatter(formatter)
 
 logger = logging.getLogger(__name__)
 
-for k, v in os.environ.items():
-  logger.info(f"HELLO: {k} = {v}")
+os.environ._debug = True
+DB_CONN=os.environ.get("MONGODB_URI")
+os.environ._debug = False
+
+logger.info(f"DB_CONN={DB_CONN}")
 
 # create app
 app = Flask(__name__)
