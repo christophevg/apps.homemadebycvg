@@ -14,6 +14,9 @@ logging.getLogger().handlers[0].setFormatter(formatter)
 
 logger = logging.getLogger(__name__)
 
+for k, v in os.environ.items():
+  logger.info(f"HELLO: {k} = {v}")
+
 # create app
 app = Flask(__name__)
 
