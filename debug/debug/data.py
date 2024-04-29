@@ -7,6 +7,8 @@ DB_CONN = os.environ.get("MONGODB_URI", "default")
 
 logger.info(f"DB_CONN={DB_CONN}")
 
+logger.info(type(os.environ))
+
 from debug import server
 
 @server.route("/")
