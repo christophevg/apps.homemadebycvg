@@ -1,0 +1,8 @@
+hosted-flasks
+gunicorn
+
+# for letmelearn
+baseweb
+pymongo
+Flask-Login
+oatk

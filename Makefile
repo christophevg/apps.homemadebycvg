@@ -1,8 +1,10 @@
 run:
-	source .env.local; env; LOG_LEVEL=DEBUG gunicorn -k eventlet -w 1 hosted_flasks.server:app
+	gunicorn -k eventlet -w 1 hosted_flasks.server:app
 
 requirements.txt:
-	pip install -U pip hosted-flasks gunicorn eventlet
+	@cat $@ | cut -d"=" -f1 | xargs pip uninstall -y
+	pip install -U pip
+	pip install -r requirements.base.txt
 	pip freeze > $@
 
 .PHONY: requirements.txt
