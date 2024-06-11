@@ -2,8 +2,35 @@ hello:
   src: hello
   path: /hello
   hostname: hello.app.homemadebycvg.com
+  image: /images/hello.png
+  description: |
+    The obligatory `hello world` example, serving
+    a basic, plain [Flask](https://flask.palletsprojects.com) app.
 
 letmelearn:
+  title: Let me Learn
   src: letmelearn/letmelearn
   hostname: letmelearn.app.homemadebycvg.com
   app: letmelearn:server
+  image: /images/letmelearn.png
+  description: |
+    Toen Quizlet grotendeels betalend werd, en dochterlief enkele belangrijke
+    toetsen in het verschiet had, was er maar één ding dat ik kon doen...  
+    "Let me Learn!" is een online/web toepassinkje dat toelaat om op
+    verschillende manieren begrippen/woorden/... te oefenen, leren en te testen.  
+    Want wat je zelf implementeert... 😇
+
+baseweb-demo:
+  title: Baseweb Demo
+  src: baseweb-demo
+  hostname: baseweb-demo.app.homemadebycvg.com
+  app: baseweb-demo:server
+  github: christophevg/baseweb-demo
+  docs: https://baseweb.readthedocs.io
+  image: /images/baseweb-demo.png
+  description: |
+    [Baseweb](https://github.com/christophevg/baseweb) is my little bit of
+    Python serving a lot of [Vuetify](https://vuetifyjs.com) goodness, all
+    rolled up in a little [Python Module](https://pypi.org/project/baseweb/).  
+    The [baseweb-demo](https://github.com/christophevg/baseweb-demo) repository
+    contains a "demo implementation", showing of many of baseweb's features.

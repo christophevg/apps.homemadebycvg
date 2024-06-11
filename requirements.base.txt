@@ -1,8 +1,11 @@
+# for running
 hosted-flasks
 gunicorn
 
-# for letmelearn
+# for most of my apps
 baseweb
+oatk
+
+# specific for letmelearn
 pymongo
 Flask-Login
-oatk

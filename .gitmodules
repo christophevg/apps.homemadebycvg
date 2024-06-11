@@ -1,3 +1,6 @@
 [submodule "letmelearn"]
 	path = letmelearn
 	url = https://github.com/christophevg/letmelearn.git
+[submodule "baseweb-demo"]
+	path = baseweb-demo
+	url = https://github.com/christophevg/baseweb-demo.git
