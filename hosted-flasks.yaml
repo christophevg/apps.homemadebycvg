@@ -6,6 +6,8 @@ hello:
   description: |
     The obligatory `hello world` example, serving
     a basic, plain [Flask](https://flask.palletsprojects.com) app.
+  track:
+    - hello_world
 
 letmelearn:
   title: Let me Learn
@@ -19,6 +21,9 @@ letmelearn:
     "Let me Learn!" is een online/web toepassinkje dat toelaat om op
     verschillende manieren begrippen/woorden/... te oefenen, leren en te testen.  
     Want wat je zelf implementeert... 😇
+  track:
+    - landing
+    - catch-all
 
 baseweb-demo:
   title: Baseweb Demo
@@ -34,3 +39,6 @@ baseweb-demo:
     rolled up in a little [Python Module](https://pypi.org/project/baseweb/).  
     The [baseweb-demo](https://github.com/christophevg/baseweb-demo) repository
     contains a "demo implementation", showing of many of baseweb's features.
+  track:
+    - landing
+    - catch-all
