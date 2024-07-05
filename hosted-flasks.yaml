@@ -42,3 +42,20 @@ baseweb-demo:
   track:
     - landing
     - catch-all
+
+howifeel:
+  title: How I Feel
+  src: howifeel/howifeel
+  hostname: howifeel.app.homemadebycvg.com
+  app: howifeel:app
+  github: christophevg/howifeel
+  image: /images/howifeel.png
+  description: |
+    Putting the dot on the i of micro social network.  
+    Share your mood with who you want and how you want. And nothing more.
+    How I Feel began as a "Let me show you in one hour what software
+    development really is about." and turned out to be much more...
+  track:
+    - index
+    - show_about_page
+

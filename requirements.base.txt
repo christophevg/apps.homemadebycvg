@@ -9,3 +9,6 @@ oatk
 # specific for letmelearn
 pymongo
 Flask-Login
+
+# specific for howifeel
+bcrypt

@@ -4,3 +4,6 @@
 [submodule "baseweb-demo"]
 	path = baseweb-demo
 	url = https://github.com/christophevg/baseweb-demo.git
+[submodule "howifeel"]
+	path = howifeel
+	url = https://github.com/christophevg/howifeel.git
