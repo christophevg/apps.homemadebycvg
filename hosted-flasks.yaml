@@ -38,7 +38,7 @@ baseweb-demo:
     Python serving a lot of [Vuetify](https://vuetifyjs.com) goodness, all
     rolled up in a little [Python Module](https://pypi.org/project/baseweb/).  
     The [baseweb-demo](https://github.com/christophevg/baseweb-demo) repository
-    contains a "demo implementation", showing of many of baseweb's features.
+    contains a "demo implementation", showing off many of baseweb's features.
   track:
     - landing
     - catch-all
@@ -51,11 +51,10 @@ howifeel:
   github: christophevg/howifeel
   image: /images/howifeel.png
   description: |
-    Putting the dot on the i of micro social network.  
-    Share your mood with who you want and how you want. And nothing more.
+    _Putting the dot on the i of micro social network._  
+    _Share your mood with who you want and how you want. And nothing more._  
     How I Feel began as a "Let me show you in one hour what software
     development really is about." and turned out to be much more...
   track:
     - index
     - show_about_page
-
