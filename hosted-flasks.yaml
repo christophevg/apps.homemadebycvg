@@ -61,7 +61,7 @@ howifeel:
     - show_about_page
 
 oatk-demo:
-  title: OAuthTooKit Demo
+  title: OAuthToolKit Demo
   src: oatk/examples/google
   hostname: oatk-demo.app.homemadebycvg.com
   app: google.app:server
