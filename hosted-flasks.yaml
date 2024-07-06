@@ -14,6 +14,7 @@ letmelearn:
   src: letmelearn/letmelearn
   hostname: letmelearn.app.homemadebycvg.com
   app: letmelearn:server
+  github: christophevg/letmelearn
   image: /images/letmelearn.png
   description: |
     Toen Quizlet grotendeels betalend werd, en dochterlief enkele belangrijke
