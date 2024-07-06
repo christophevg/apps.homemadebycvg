@@ -58,3 +58,20 @@ howifeel:
   track:
     - index
     - show_about_page
+
+oatk-demo:
+  title: OAuthTooKit Demo
+  src: oatk/examples/google
+  hostname: oatk-demo.app.homemadebycvg.com
+  app: google.app:server
+  github: christophevg/oatk
+  image: /images/oatk-demo.png
+  description: |
+    OAuth is a standard and OAuthToolKit is my minimal implementation of some
+    aspects of it.  
+    This demo allows you to login using your Google account and
+    then uses that authentication to access a protected API endpoint.  
+    **NOTE** No personal information is used or stored in any way! Just the
+    token is validated by the API.
+  track:
+    - home

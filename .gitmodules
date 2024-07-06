@@ -7,3 +7,6 @@
 [submodule "howifeel"]
 	path = howifeel
 	url = https://github.com/christophevg/howifeel.git
+[submodule "oatk"]
+	path = oatk
+	url = https://github.com/christophevg/oatk
