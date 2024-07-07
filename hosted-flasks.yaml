@@ -1,78 +1,87 @@
-hello:
-  src: hello
-  path: /hello
-  hostname: hello.app.homemadebycvg.com
-  image: /images/hello.png
-  description: |
-    The obligatory `hello world` example, serving
-    a basic, plain [Flask](https://flask.palletsprojects.com) app.
-  track:
-    - hello_world
+title: Apps Homemade by CVG
+description: |
+  From time to time I make some little application, purely for fun, to prove my
+  point or to help someone. This site now brings these all together on a
+  unified stage with information and links to more information, if you are
+  interested.  
+  Soon I'm going to extend all these apps and include a demo
+  account/functionality, so you can actually try them for yourself. Soon...! 😇
+apps:
+  hello:
+    src: hello
+    path: /hello
+    hostname: hello.app.homemadebycvg.com
+    image: /images/hello.png
+    description: |
+      The obligatory `hello world` example, serving
+      a basic, plain [Flask](https://flask.palletsprojects.com) app.
+    track:
+      - hello_world
 
-letmelearn:
-  title: Let me Learn
-  src: letmelearn/letmelearn
-  hostname: letmelearn.app.homemadebycvg.com
-  app: letmelearn:server
-  github: christophevg/letmelearn
-  image: /images/letmelearn.png
-  description: |
-    Toen Quizlet grotendeels betalend werd, en dochterlief enkele belangrijke
-    toetsen in het verschiet had, was er maar één ding dat ik kon doen...  
-    "Let me Learn!" is een online/web toepassinkje dat toelaat om op
-    verschillende manieren begrippen/woorden/... te oefenen, leren en te testen.  
-    Want wat je zelf implementeert... 😇
-  track:
-    - landing
-    - catch-all
+  letmelearn:
+    title: Let me Learn
+    src: letmelearn/letmelearn
+    hostname: letmelearn.app.homemadebycvg.com
+    app: letmelearn:server
+    github: christophevg/letmelearn
+    image: /images/letmelearn.png
+    description: |
+      Toen Quizlet grotendeels betalend werd, en dochterlief enkele belangrijke
+      toetsen in het verschiet had, was er maar één ding dat ik kon doen...  
+      "Let me Learn!" is een online/web toepassinkje dat toelaat om op
+      verschillende manieren begrippen/woorden/... te oefenen, leren en te testen.  
+      Want wat je zelf implementeert... 😇
+    track:
+      - landing
+      - catch-all
 
-baseweb-demo:
-  title: Baseweb Demo
-  src: baseweb-demo
-  hostname: baseweb-demo.app.homemadebycvg.com
-  app: baseweb-demo:server
-  github: christophevg/baseweb-demo
-  docs: https://baseweb.readthedocs.io
-  image: /images/baseweb-demo.png
-  description: |
-    [Baseweb](https://github.com/christophevg/baseweb) is my little bit of
-    Python serving a lot of [Vuetify](https://vuetifyjs.com) goodness, all
-    rolled up in a little [Python Module](https://pypi.org/project/baseweb/).  
-    The [baseweb-demo](https://github.com/christophevg/baseweb-demo) repository
-    contains a "demo implementation", showing off many of baseweb's features.
-  track:
-    - landing
-    - catch-all
+  baseweb-demo:
+    title: Baseweb Demo
+    src: baseweb-demo
+    hostname: baseweb-demo.app.homemadebycvg.com
+    app: baseweb-demo:server
+    github: christophevg/baseweb-demo
+    docs: https://baseweb.readthedocs.io
+    image: /images/baseweb-demo.png
+    description: |
+      [Baseweb](https://github.com/christophevg/baseweb) is my little bit of
+      Python serving a lot of [Vuetify](https://vuetifyjs.com) goodness, all
+      rolled up in a little [Python Module](https://pypi.org/project/baseweb/).  
+      The [baseweb-demo](https://github.com/christophevg/baseweb-demo) repository
+      contains a "demo implementation", showing off many of baseweb's features.
+    track:
+      - landing
+      - catch-all
 
-howifeel:
-  title: How I Feel
-  src: howifeel/howifeel
-  hostname: howifeel.app.homemadebycvg.com
-  app: howifeel:app
-  github: christophevg/howifeel
-  image: /images/howifeel.png
-  description: |
-    _Putting the dot on the i of micro social network._  
-    _Share your mood with who you want and how you want. And nothing more._  
-    How I Feel began as a "Let me show you in one hour what software
-    development really is about." and turned out to be much more...
-  track:
-    - index
-    - show_about_page
+  howifeel:
+    title: How I Feel
+    src: howifeel/howifeel
+    hostname: howifeel.app.homemadebycvg.com
+    app: howifeel:app
+    github: christophevg/howifeel
+    image: /images/howifeel.png
+    description: |
+      _Putting the dot on the i of micro social network._  
+      _Share your mood with who you want and how you want. And nothing more._  
+      How I Feel began as a "Let me show you in one hour what software
+      development really is about." and turned out to be much more...
+    track:
+      - index
+      - show_about_page
 
-oatk-demo:
-  title: OAuthToolKit Demo
-  src: oatk/examples/google
-  hostname: oatk-demo.app.homemadebycvg.com
-  app: google.app:server
-  github: christophevg/oatk
-  image: /images/oatk-demo.png
-  description: |
-    OAuth is a standard and OAuthToolKit is my minimal implementation of some
-    aspects of it.  
-    This demo allows you to login using your Google account and
-    then uses that authentication to access a protected API endpoint.  
-    **NOTE** No personal information is used or stored in any way! Just the
-    token is validated by the API.
-  track:
-    - home
+  oatk-demo:
+    title: OAuthToolKit Demo
+    src: oatk/examples/google
+    hostname: oatk-demo.app.homemadebycvg.com
+    app: google.app:server
+    github: christophevg/oatk
+    image: /images/oatk-demo.png
+    description: |
+      OAuth is a standard and OAuthToolKit is my minimal implementation of some
+      aspects of it.  
+      This demo allows you to login using your Google account and
+      then uses that authentication to access a protected API endpoint.  
+      **NOTE** No personal information is used or stored in any way! Just the
+      token is validated by the API.
+    track:
+      - home
