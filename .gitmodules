@@ -10,3 +10,6 @@
 [submodule "oatk"]
 	path = oatk
 	url = https://github.com/christophevg/oatk
+[submodule "homemadebycvg.com"]
+	path = homemadebycvg.com
+	url = https://github.com/christophevg/homemadebycvg.com.git

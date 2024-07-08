@@ -85,3 +85,16 @@ apps:
       token is validated by the API.
     track:
       - home
+
+  homemade:
+    title: Homemade By CVG
+    src: homemadebycvg.com
+    hostname: homemadebycvg.com
+    github: christophevg/homemadebycvg.com
+    image: /images/homemade.png
+    description: |
+      I don't only make apps. I sometimes also endulge in some form of physical
+      crafting. The top-level landing page app is recursively also hosted as a
+      hosted flask.
+    track:
+      - home
