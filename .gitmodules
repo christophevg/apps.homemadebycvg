@@ -13,3 +13,6 @@
 [submodule "homemadebycvg.com"]
 	path = homemadebycvg.com
 	url = https://github.com/christophevg/homemadebycvg.com.git
+[submodule "getijden"]
+	path = getijden
+	url = https://github.com/christophevg/getijden

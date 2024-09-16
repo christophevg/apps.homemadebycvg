@@ -35,6 +35,20 @@ apps:
       - landing
       - catch-all
 
+  getijden:
+    title: Getijden
+    src: getijden
+    path: /getijden
+    app: getijden.web:app
+    github: christophevg/getijden
+    description: |
+      Deze getijden app, maakt de informatie van het "Agentschap Maritieme
+      Dienstverlening en Kust" direct bruikbaar voor je persoonlijke kalender.  
+      <b>Work in progress 😇</b>
+    track:
+      - home
+      - cal
+
   baseweb-demo:
     title: Baseweb Demo
     src: baseweb-demo
