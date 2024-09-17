@@ -41,6 +41,7 @@ apps:
     hostname: getijden.app.homemadebycvg.com
     app: getijden.web:app
     github: christophevg/getijden
+    image: /images/getijden.png
     description: |
       Deze getijden app, maakt de informatie van het "Agentschap Maritieme
       Dienstverlening en Kust" direct bruikbaar voor je persoonlijke kalender.  
