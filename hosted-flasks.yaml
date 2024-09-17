@@ -38,13 +38,12 @@ apps:
   getijden:
     title: Getijden
     src: getijden
-    path: /getijden
+    hostname: getijden.app.homemadebycvg.com
     app: getijden.web:app
     github: christophevg/getijden
     description: |
       Deze getijden app, maakt de informatie van het "Agentschap Maritieme
       Dienstverlening en Kust" direct bruikbaar voor je persoonlijke kalender.  
-      <b>Work in progress 😇</b>
     track:
       - home
       - cal
