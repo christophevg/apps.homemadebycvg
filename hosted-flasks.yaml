@@ -112,3 +112,18 @@ apps:
       hosted flask.
     track:
       - home
+
+  nationofpositivity:
+    title: Nation of Positivity
+    src: nationofpositivity
+    hostname: nationofpositivity.com
+    path: /nation
+    app: nationofpositivity.web:app
+    github: 2know/nationofpositivity
+    image: /images/nationofpositivity.svg
+    description: |
+      Geef het geschenk van _positiviteit_! In de Nation of Positivity vind je
+      tal van kleine leuke attenties. Allemaal gepersonaliseerd en bedoeld om
+      jouw positiviteit aan iemand anders te kunnen geven.
+    track:
+      - home
