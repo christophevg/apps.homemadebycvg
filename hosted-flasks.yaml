@@ -7,16 +7,50 @@ description: |
   Soon I'm going to extend all these apps and include a demo
   account/functionality, so you can actually try them for yourself. Soon...! 😇
 apps:
-  hello:
-    src: hello
-    path: /hello
-    hostname: hello.app.homemadebycvg.com
-    image: /images/hello.png
+  
+  nationofpositivity:
+    title: Nation of Positivity
+    src: nationofpositivity
+    hostname: nationofpositivity.com
+    app: nationofpositivity.web:app
+    github: 2know/nationofpositivity
+    image: /images/nationofpositivity.svg
     description: |
-      The obligatory `hello world` example, serving
-      a basic, plain [Flask](https://flask.palletsprojects.com) app.
+      Geef het geschenk van _positiviteit_! In de Nation of Positivity vind je
+      tal van kleine leuke attenties. Allemaal gepersonaliseerd en bedoeld om
+      jouw positiviteit aan iemand anders te kunnen schenken.  
+      Met Nation of Positivity biedt ik mijn atelier en eigen werk aan in een
+      kleine online shop. Met liefde gemaakt om met veel liefde te geven. Samen
+      zorgen voor wat meer positiviteit in de wereld.
     track:
-      - hello_world
+      - home
+
+  homemade:
+    title: Homemade By CVG
+    src: homemadebycvg.com
+    hostname: homemadebycvg.com
+    github: christophevg/homemadebycvg.com
+    image: /images/homemade.png
+    description: |
+      I don't only make apps. I sometimes also endulge in some form of physical
+      crafting. The top-level landing page app is recursively also hosted as a
+      hosted flask.
+    track:
+      - home
+  
+  getijden:
+    title: Getijden
+    src: getijden
+    hostname: getijden.app.homemadebycvg.com
+    app: getijden.web:app
+    github: christophevg/getijden
+    image: /images/getijden.png
+    description: |
+      Deze getijden app, maakt de informatie van het "Agentschap Maritieme
+      Dienstverlening en Kust" direct bruikbaar voor je persoonlijke kalender.  
+    track:
+      - home
+      - cal
 
   letmelearn:
     title: Let me Learn
@@ -34,20 +68,6 @@ apps:
     track:
       - landing
       - catch-all
-
-  getijden:
-    title: Getijden
-    src: getijden
-    hostname: getijden.app.homemadebycvg.com
-    app: getijden.web:app
-    github: christophevg/getijden
-    image: /images/getijden.png
-    description: |
-      Deze getijden app, maakt de informatie van het "Agentschap Maritieme
-      Dienstverlening en Kust" direct bruikbaar voor je persoonlijke kalender.  
-    track:
-      - home
-      - cal
 
   baseweb-demo:
     title: Baseweb Demo
@@ -100,29 +120,13 @@ apps:
     track:
       - home
 
-  homemade:
-    title: Homemade By CVG
-    src: homemadebycvg.com
-    hostname: homemadebycvg.com
-    github: christophevg/homemadebycvg.com
-    image: /images/homemade.png
+  hello:
+    src: hello
+    path: /hello
+    hostname: hello.app.homemadebycvg.com
+    image: /images/hello.png
     description: |
-      I don't only make apps. I sometimes also endulge in some form of physical
-      crafting. The top-level landing page app is recursively also hosted as a
-      hosted flask.
+      The obligatory `hello world` example, serving
+      a basic, plain [Flask](https://flask.palletsprojects.com) app.
     track:
-      - home
-
-  nationofpositivity:
-    title: Nation of Positivity
-    src: nationofpositivity
-    hostname: nationofpositivity.com
-    app: nationofpositivity.web:app
-    github: 2know/nationofpositivity
-    image: /images/nationofpositivity.svg
-    description: |
-      Geef het geschenk van _positiviteit_! In de Nation of Positivity vind je
-      tal van kleine leuke attenties. Allemaal gepersonaliseerd en bedoeld om
-      jouw positiviteit aan iemand anders te kunnen geven.
-    track:
-      - home
+      - hello_world
