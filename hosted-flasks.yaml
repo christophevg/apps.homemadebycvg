@@ -117,7 +117,6 @@ apps:
     title: Nation of Positivity
     src: nationofpositivity
     hostname: nationofpositivity.com
-    path: /nation
     app: nationofpositivity.web:app
     github: 2know/nationofpositivity
     image: /images/nationofpositivity.svg
