@@ -8,6 +8,17 @@ description: |
   account/functionality, so you can actually try them for yourself. Soon...! 😇
 apps:
   
+  hello:
+    src: hello
+    path: /hello
+    hostname: hello.app.homemadebycvg.com
+    image: /images/hello.png
+    description: |
+      The obligatory `hello world` example, serving
+      a basic, plain [Flask](https://flask.palletsprojects.com) app.
+    track:
+      - hello_world
+
   nationofpositivity:
     title: Nation of Positivity
     src: nationofpositivity
@@ -119,14 +130,3 @@ apps:
       token is validated by the API.
     track:
       - home
-
-  hello:
-    src: hello
-    path: /hello
-    hostname: hello.app.homemadebycvg.com
-    image: /images/hello.png
-    description: |
-      The obligatory `hello world` example, serving
-      a basic, plain [Flask](https://flask.palletsprojects.com) app.
-    track:
-      - hello_world
