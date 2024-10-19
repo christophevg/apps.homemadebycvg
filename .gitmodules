@@ -16,3 +16,6 @@
 [submodule "getijden"]
 	path = getijden
 	url = https://github.com/christophevg/getijden
+[submodule "nationofpositivity"]
+	path = nationofpositivity
+	url = git@github.com:christophevg/nationofpositivity.git
