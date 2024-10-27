@@ -15,3 +15,10 @@ Flask-Login
 
 # specific for howifeel
 bcrypt
+
+# specifics for nationofpositivity
+pageable_mongo
+requests
+sendgrid
+qrcode
+pillow

@@ -23,8 +23,7 @@ apps:
     title: Nation of Positivity
     src: nationofpositivity
     hostname: nationofpositivity.com
-    app: nationofpositivity.web:app
-    github: 2know/nationofpositivity
+    app: nationofpositivity.shop:server
     image: /images/nationofpositivity.svg
     description: |
       Geef het geschenk van _positiviteit_! In de Nation of Positivity vind je
