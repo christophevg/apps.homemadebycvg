@@ -33,7 +33,8 @@ apps:
       kleine online shop. Met liefde gemaakt om met veel liefde te geven. Samen
       zorgen voor wat meer positiviteit in de wereld.
     track:
-      - home
+      - landing
+      - catch-all
 
   homemade:
     title: Homemade By CVG
