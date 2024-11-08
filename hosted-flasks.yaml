@@ -35,6 +35,9 @@ apps:
     track:
       - landing
       - catch-all
+    log:
+      headers:
+        - CF-Connecting-IP
 
   homemade:
     title: Homemade By CVG

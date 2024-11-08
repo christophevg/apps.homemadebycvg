@@ -21,7 +21,7 @@ Flask-SocketIO==5.4.1
 greenlet==3.1.1
 gunicorn==23.0.0
 h11==0.14.0
-hosted-flasks==0.2.2
+hosted-flasks==0.2.3
 humanize==4.10.0
 idna==3.10
 importlib_metadata==8.5.0
@@ -29,10 +29,10 @@ itsdangerous==2.2.0
 Jinja2==3.1.4
 Markdown==3.7
 MarkupSafe==2.1.5
-mollie-api-python==3.7.2
+mollie-api-python==3.7.4
 oatk==0.0.11
 oauthlib==3.2.2
-packaging==24.1
+packaging==24.2
 pageable-mongo==0.1.0
 pillow==10.4.0
 pycparser==2.22
@@ -55,6 +55,7 @@ six==1.16.0
 starkbank-ecdsa==2.2.0
 termcolor==2.4.0
 typing_extensions==4.12.2
+ua-parser==0.18.0
 urllib3==2.2.3
 websocket-client==1.8.0
 Werkzeug==3.0.6
