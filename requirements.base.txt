@@ -5,21 +5,10 @@ eventlet==0.36.1
 hosted-flasks
 gunicorn
 
-# for most of my apps
-baseweb
-oatk
+# app specifics
 
-# specific for letmelearn
-pymongo
-Flask-Login
-
-# specific for howifeel
-bcrypt
-
-# specifics for nationofpositivity
-pageable_mongo
-requests
-sendgrid
-qrcode
-pillow
-mollie-api-python
+-r baseweb-demo/requirements.txt
+-r homemadebycvg.com/requirements.base.txt
+-r howifeel/requirements.base.txt
+-r letmelearn/requirements.base.txt
+-r nationofpositivity/requirements.base.txt
