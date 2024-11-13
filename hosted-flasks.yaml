@@ -18,6 +18,9 @@ apps:
       a basic, plain [Flask](https://flask.palletsprojects.com) app.
     track:
       - hello_world
+    log:
+      headers:
+        - CF-Connecting-IP
 
   nationofpositivity:
     title: Nation of Positivity
@@ -58,6 +61,9 @@ apps:
       hosted flask.
     track:
       - home
+    log:
+      headers:
+        - CF-Connecting-IP
   
   getijden:
     title: Getijden
@@ -72,6 +78,9 @@ apps:
     track:
       - home
       - cal
+    log:
+      headers:
+        - CF-Connecting-IP
 
   letmelearn:
     title: Let me Learn
@@ -92,6 +101,9 @@ apps:
       - quiz
       - topics
       - training
+    log:
+      headers:
+        - CF-Connecting-IP
 
   baseweb-demo:
     title: Baseweb Demo
@@ -123,6 +135,9 @@ apps:
       - components-collectionview
       - components-linechart
       - components-processdiagram
+    log:
+      headers:
+        - CF-Connecting-IP
 
   howifeel:
     title: How I Feel
@@ -139,6 +154,9 @@ apps:
     track:
       - index
       - show_about_page
+    log:
+      headers:
+        - CF-Connecting-IP
 
   oatk-demo:
     title: OAuthToolKit Demo
@@ -156,3 +174,6 @@ apps:
       token is validated by the API.
     track:
       - home
+    log:
+      headers:
+        - CF-Connecting-IP
