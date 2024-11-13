@@ -34,7 +34,14 @@ apps:
       zorgen voor wat meer positiviteit in de wereld.
     track:
       - landing
-      - catch-all
+      - shop
+      - products
+      - products-id
+      - basket
+      - order-id
+      - faq
+      - contact
+      - algemene-voorwaarden
     log:
       headers:
         - CF-Connecting-IP
@@ -81,7 +88,10 @@ apps:
       Want wat je zelf implementeert... 😇
     track:
       - landing
-      - catch-all
+      - about
+      - quiz
+      - topics
+      - training
 
   baseweb-demo:
     title: Baseweb Demo
@@ -99,7 +109,20 @@ apps:
       contains a "demo implementation", showing off many of baseweb's features.
     track:
       - landing
-      - catch-all
+      - page1
+      - page2
+      - page3
+      - page4
+      - page5
+      - page6
+      - page7
+      - page7-id
+      - protected-page
+      - components-pagewithstatus
+      - components-pagewithbanner
+      - components-collectionview
+      - components-linechart
+      - components-processdiagram
 
   howifeel:
     title: How I Feel
