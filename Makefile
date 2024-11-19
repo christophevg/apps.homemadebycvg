@@ -15,5 +15,6 @@ add:
 init:
 	git submodule update --init --recursive
 
-update:
+update: requirements.txt
 	git submodule foreach git pull origin master
+	github
