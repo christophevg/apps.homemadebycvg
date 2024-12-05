@@ -30,7 +30,7 @@ Jinja2==3.1.4
 Markdown==3.7
 MarkupSafe==2.1.5
 mollie-api-python==3.7.4
-oatk==0.1.0
+oatk==0.1.1
 oauthlib==3.2.2
 packaging==24.2
 pageable-mongo==0.1.0
