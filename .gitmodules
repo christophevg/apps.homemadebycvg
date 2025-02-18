@@ -19,3 +19,6 @@
 [submodule "nationofpositivity"]
 	path = nationofpositivity
 	url = git@github.com:christophevg/nationofpositivity.git
+[submodule "checkin"]
+	path = checkin
+	url = git@github.com:christophevg/checkin.git

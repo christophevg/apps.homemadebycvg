@@ -177,3 +177,16 @@ apps:
     log:
       headers:
         - CF-Connecting-IP
+
+  checkin:
+    hide: true
+    title: VG Airlines Self Check-In Form
+    src: checkin
+    hostname: checkin.app.homemadebycvg.com
+    app: checkin.checkin:server
+    description: |
+    track:
+      - landing
+    log:
+      headers:
+        - CF-Connecting-IP
