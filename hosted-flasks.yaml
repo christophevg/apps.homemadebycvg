@@ -9,7 +9,8 @@ description: |
 apps:
   
   hello:
-    src: hello
+    imports:
+      hello : hello/__init__.py
     path: /hello
     hostname: hello.app.homemadebycvg.com
     image: /images/hello.png
@@ -23,15 +24,16 @@ apps:
         - CF-Connecting-IP
 
   nationofpositivity:
+    imports:
+      nationofpositivity : nationofpositivity/shop/__init__.py
+    app: server
     title: Nation of Positivity
-    src: nationofpositivity
     hostname: nationofpositivity.com
-    app: nationofpositivity.shop:server
     image: /images/nationofpositivity.svg
     description: |
       Geef het geschenk van _positiviteit_! In de Nation of Positivity vind je
       tal van kleine leuke attenties. Allemaal gepersonaliseerd en bedoeld om
-      jouw positiviteit aan iemand anders te kunnen schenken.  
+      jouw positiviteit aan iemand anders te kunnen schenken.
       Met Nation of Positivity bied ik mijn atelier en eigen werk aan in een
       kleine online shop. Met liefde gemaakt om met veel liefde te geven. Samen
       zorgen voor wat meer positiviteit in de wereld.
@@ -50,8 +52,9 @@ apps:
         - CF-Connecting-IP
 
   homemade:
+    imports:
+      homemade : homemadebycvg.com/__init__.py
     title: Homemade By CVG
-    src: homemadebycvg.com
     hostname: homemadebycvg.com
     github: christophevg/homemadebycvg.com
     image: /images/homemade.png
@@ -66,10 +69,10 @@ apps:
         - CF-Connecting-IP
   
   getijden:
+    imports:
+      getijden : getijden/web/__init__.py
     title: Getijden
-    src: getijden
     hostname: getijden.app.homemadebycvg.com
-    app: getijden.web:app
     github: christophevg/getijden
     image: /images/getijden.png
     description: |
@@ -83,10 +86,12 @@ apps:
         - CF-Connecting-IP
 
   letmelearn:
+    imports:
+      letmelearn     : letmelearn/letmelearn/__init__.py
+      letmelearn.web : letmelearn/letmelearn/web.py
+    app: letmelearn.web:server
     title: Let me Learn
-    src: letmelearn/letmelearn
     hostname: letmelearn.app.homemadebycvg.com
-    app: letmelearn:server
     github: christophevg/letmelearn
     image: /images/letmelearn.png
     description: |
@@ -106,17 +111,18 @@ apps:
         - CF-Connecting-IP
 
   baseweb-demo:
+    imports:
+      baseweb-demo : baseweb-demo/__init__.py
+    app: server
     title: Baseweb Demo
-    src: baseweb-demo
     hostname: baseweb-demo.app.homemadebycvg.com
-    app: baseweb-demo:server
     github: christophevg/baseweb-demo
     docs: https://baseweb.readthedocs.io
     image: /images/baseweb-demo.png
     description: |
       [Baseweb](https://github.com/christophevg/baseweb) is my little bit of
       Python serving a lot of [Vuetify](https://vuetifyjs.com) goodness, all
-      rolled up in a little [Python Module](https://pypi.org/project/baseweb/).  
+      rolled up in a little [Python Module](https://pypi.org/project/baseweb/).
       The [baseweb-demo](https://github.com/christophevg/baseweb-demo) repository
       contains a "demo implementation", showing off many of baseweb's features.
     track:
@@ -140,15 +146,15 @@ apps:
         - CF-Connecting-IP
 
   howifeel:
+    imports:
+      howifeel : howifeel/howifeel/__init__.py
     title: How I Feel
-    src: howifeel/howifeel
     hostname: howifeel.app.homemadebycvg.com
-    app: howifeel:app
     github: christophevg/howifeel
     image: /images/howifeel.png
     description: |
-      _Putting the dot on the i of micro social network._  
-      _Share your mood with who you want and how you want. And nothing more._  
+      _Putting the dot on the i of micro social network._
+      _Share your mood with who you want and how you want. And nothing more._
       How I Feel began as a "Let me show you in one hour what software
       development really is about." and turned out to be much more...
     track:
@@ -159,17 +165,18 @@ apps:
         - CF-Connecting-IP
 
   oatk-demo:
+    imports:
+      google: oatk/examples/google/app.py
+    app: server
     title: OAuthToolKit Demo
-    src: oatk/examples/google
     hostname: oatk-demo.app.homemadebycvg.com
-    app: google.app:server
     github: christophevg/oatk
     image: /images/oatk-demo.png
     description: |
       OAuth is a standard and OAuthToolKit is my minimal implementation of some
-      aspects of it.  
+      aspects of it.
       This demo allows you to login using your Google account and
-      then uses that authentication to access a protected API endpoint.  
+      then uses that authentication to access a protected API endpoint.
       **NOTE** No personal information is used or stored in any way! Just the
       token is validated by the API.
     track:
@@ -179,11 +186,12 @@ apps:
         - CF-Connecting-IP
 
   checkin:
+    imports:
+      checkin: checkin/checkin/__init__.py
+    app: server
     hide: true
     title: VG Airlines Self Check-In Form
-    src: checkin
     hostname: checkin.app.homemadebycvg.com
-    app: checkin.checkin:server
     description: |
     track:
       - landing

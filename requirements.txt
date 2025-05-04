@@ -21,7 +21,7 @@ Flask-SocketIO==5.5.1
 greenlet==3.1.1
 gunicorn==23.0.0
 h11==0.16.0
-hosted-flasks==0.3.4
+hosted-flasks==0.4.0
 humanize==4.10.0
 idna==3.10
 importlib_metadata==8.5.0
