@@ -192,9 +192,22 @@ apps:
     hide: true
     title: VG Airlines Self Check-In Form
     hostname: checkin.app.homemadebycvg.com
-    description: |
+    description: Check in with VG Airlines!
     track:
       - landing
+    log:
+      headers:
+        - CF-Connecting-IP
+
+  architectaday:
+    imports:
+      architectaday: architectaday/web/__init__.py
+    hide: true
+    title: Architect A Day
+    hostname: architectaday.com
+    description: Check in with VG Airlines!
+    track:
+      - index
     log:
       headers:
         - CF-Connecting-IP

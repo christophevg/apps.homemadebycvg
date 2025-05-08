@@ -22,3 +22,6 @@
 [submodule "checkin"]
 	path = checkin
 	url = git@github.com:christophevg/checkin.git
+[submodule "architectaday"]
+	path = architectaday
+	url = git@github.com:christophevg/architectaday.git
