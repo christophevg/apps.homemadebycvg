@@ -12,3 +12,4 @@ gunicorn
 -r howifeel/requirements.base.txt
 -r letmelearn/requirements.base.txt
 -r nationofpositivity/requirements.base.txt
+-r architectaday/requirements.base.txt

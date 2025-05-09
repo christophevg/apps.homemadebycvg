@@ -205,7 +205,7 @@ apps:
     hide: true
     title: Architect A Day
     hostname: architectaday.com
-    description: Check in with VG Airlines!
+    description: Architect A Day
     track:
       - index
     log:
