@@ -1,8 +1,7 @@
-# to avoid patching issues (for now)
-eventlet==0.36.1
-
 # for running
-hosted-flasks>=0.4.0
+
+hosted-flasks
+eventlet
 gunicorn
 
 # app specifics
@@ -10,6 +9,6 @@ gunicorn
 -r baseweb-demo/requirements.txt
 -r homemadebycvg.com/requirements.base.txt
 -r howifeel/requirements.base.txt
--r letmelearn/requirements.base.txt
+-r letmelearn/requirements.txt
 -r nationofpositivity/requirements.base.txt
 -r architectaday/requirements.base.txt
