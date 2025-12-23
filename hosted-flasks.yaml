@@ -27,7 +27,10 @@ apps:
     hide: true
     imports:
       parking : parking/__init__.py
-    hostname: parking.app.homemadebycvg.com
+    hostname:
+      - parking.app.homemadebycvg.com
+      - archiku.com
+      - archiku.org
     description: |
       a general purpose parking/landing/coming soon page
     track:
