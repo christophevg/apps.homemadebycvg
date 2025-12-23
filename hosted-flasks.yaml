@@ -3,11 +3,11 @@ description: |
   From time to time I make some little application, purely for fun, to prove my
   point or to help someone. This site now brings these all together on a
   unified stage with information and links to more information, if you are
-  interested.  
+  interested.
   Soon I'm going to extend all these apps and include a demo
   account/functionality, so you can actually try them for yourself. Soon...! 😇
 apps:
-  
+
   hello:
     imports:
       hello : hello/__init__.py
@@ -19,6 +19,19 @@ apps:
       a basic, plain [Flask](https://flask.palletsprojects.com) app.
     track:
       - hello_world
+    log:
+      headers:
+        - CF-Connecting-IP
+
+  parking:
+    hide: true
+    imports:
+      parking : parking/__init__.py
+    hostname: parking.app.homemadebycvg.com
+    description: |
+      a general purpose parking/landing/coming soon page
+    track:
+      - coming_soon
     log:
       headers:
         - CF-Connecting-IP
@@ -67,7 +80,7 @@ apps:
     log:
       headers:
         - CF-Connecting-IP
-  
+
   getijden:
     imports:
       getijden : getijden/web/__init__.py
@@ -77,7 +90,7 @@ apps:
     image: /images/getijden.png
     description: |
       Deze getijden app, maakt de informatie van het "Agentschap Maritieme
-      Dienstverlening en Kust" direct bruikbaar voor je persoonlijke kalender.  
+      Dienstverlening en Kust" direct bruikbaar voor je persoonlijke kalender.
     track:
       - home
       - cal
@@ -96,9 +109,9 @@ apps:
     image: /images/letmelearn.png
     description: |
       Toen Quizlet grotendeels betalend werd, en dochterlief enkele belangrijke
-      toetsen in het verschiet had, was er maar één ding dat ik kon doen...  
+      toetsen in het verschiet had, was er maar één ding dat ik kon doen...
       "Let me Learn!" is een online/web toepassinkje dat toelaat om op
-      verschillende manieren begrippen/woorden/... te oefenen, leren en te testen.  
+      verschillende manieren begrippen/woorden/... te oefenen, leren en te testen.
       Want wat je zelf implementeert... 😇
     track:
       - landing
