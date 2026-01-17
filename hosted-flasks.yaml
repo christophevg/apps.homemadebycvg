@@ -39,6 +39,20 @@ apps:
       headers:
         - CF-Connecting-IP
 
+  schema-tools:
+    hide: true
+    imports:
+      schema-tools : schema-tools/__init__.py
+    path: /schema-tools
+    description: |
+      schema-tools ubl validation
+    track:
+      - home
+      - validate
+    log:
+      headers:
+        - CF-Connecting-IP
+
   nationofpositivity:
     imports:
       nationofpositivity : nationofpositivity/shop/__init__.py

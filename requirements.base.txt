@@ -12,3 +12,4 @@ gunicorn
 -r letmelearn/requirements.txt
 -r nationofpositivity/requirements.base.txt
 -r architectaday/requirements.base.txt
+-r schema-tools/requirements.base.txt
