@@ -215,29 +215,29 @@ apps:
       headers:
         - CF-Connecting-IP
 
-  checkin:
-    imports:
-      checkin: checkin/checkin/__init__.py
-    app: server
-    hide: true
-    title: VG Airlines Self Check-In Form
-    hostname: checkin.app.homemadebycvg.com
-    description: Check in with VG Airlines!
-    track:
-      - landing
-    log:
-      headers:
-        - CF-Connecting-IP
+  # checkin:
+  #   imports:
+  #     checkin: checkin/checkin/__init__.py
+  #   app: server
+  #   hide: true
+  #   title: VG Airlines Self Check-In Form
+  #   hostname: checkin.app.homemadebycvg.com
+  #   description: Check in with VG Airlines!
+  #   track:
+  #     - landing
+  #   log:
+  #     headers:
+  #       - CF-Connecting-IP
 
-  architectaday:
-    imports:
-      architectaday: architectaday/web/__init__.py
-    hide: true
-    title: Architect A Day
-    hostname: architectaday.com
-    description: Architect A Day
-    track:
-      - index
-    log:
-      headers:
-        - CF-Connecting-IP
+  # architectaday:
+  #   imports:
+  #     architectaday: architectaday/web/__init__.py
+  #   hide: true
+  #   title: Architect A Day
+  #   hostname: architectaday.com
+  #   description: Architect A Day
+  #   track:
+  #     - index
+  #   log:
+  #     headers:
+  #       - CF-Connecting-IP
