@@ -4,7 +4,7 @@
 
 IMAGE     = apps-homemadebycvg:container
 CONTAINER = apps-homemadebycvg
-PORT      = 8080:80
+PORT      = 8080:10000
 
 # Build runtime: prefer podman, fallback to docker
 ifeq ($(BUILD_RUNTIME),)
