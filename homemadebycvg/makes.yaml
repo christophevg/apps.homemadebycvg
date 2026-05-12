@@ -1,0 +1,457 @@
+makes:
+
+  vonken-op-het-witte-doek:
+    title: Vonken op het witte doek
+    description: |
+      In 2025 heb ik me opnieuw ingeschreven voor een opleiding aan de kunstacademie: grafisch ontwerp en illustratietechnieken. En dat was voorbestemd om vonken te geven… vonken op het witte doek ❤️‍🔥
+    info: https://christophe.vg/makes/Vonken-op-het-witte-doek
+    image: https://christophe.vg/makes/images/header/vonk.png
+    instagram: https://www.instagram.com/p/DUjI9fiDOiO
+    when: 5 februari 2026
+
+  coffin-gift-box:
+    title: Coffin Gift Box
+    description: |
+      It doesn’t always require rocket science to make a gift more personal. Sometimes, a little attention to the wrapping can make all the difference.
+
+      I happen to have a friend who is absolutely obsessed with Halloween. She has more Halloween decorations than all Belgian amusement parks combined. No, I’m not exaggerating! 🎃
+
+      When she organized a Halloween party at her house this year, I couldn’t resist bringing a gift. Over the past few years, I’ve regularly been making personalized and custom gift wrapping on several occasions. So, what better gift than a coffin for a Halloween party present?! 💀
+    info: https://christophe.vg/makes/Coffin-Gift-Box
+    image: https://christophe.vg/makes/images/header/coffin-gift-box.jpeg
+    instagram: https://www.instagram.com/p/DQ7h5bGDM2K
+    when: 31 october 2025
+
+  formula-of-architecture:
+    kind: writing
+    title: The Formula of Architecture
+    description: |
+      Do you possess the necessary capabilities to drive your business to
+      success? Are you equipped with the required processes, the right people,
+      information, and technology? Or at the very least, do you have a clear
+      understanding of what these elements are, or even what they should be?
+
+      With the Formula of Architecture, I’ve finally articulated my perspective
+      on capabilities and their appropriate interpretation within the context
+      of Enterprise Architecture. I’ve also explored their internal structure
+      and the implications of applying them effectively.
+    read: https://christophe.vg/about/Formula-of-Architecture
+    image: https://christophe.vg/about/images/header/formula-of-architecture.png
+    instagram: https://www.instagram.com/p/DKhwfP2I3bH
+    when: 5 june 2025
+
+  nation-of-positivity:
+    title: Nation of Positivity
+    description: |
+      Bij Nation of Positivity vind je veel kleine leuke cadeautjes. Allemaal
+      gepersonaliseerd en bedoeld om jouw positiviteit aan iemand anders te
+      geven.
+
+      Velen van jullie hebben de afgelopen jaren al een klein extraatje van mij
+      gekregen. Ze waren altijd zelfgemaakt, gepersonaliseerd, uniek voor jou.
+      Het was leuk om de soms wat verbaasde, maar altijd vooral heel dankbare
+      reacties te zien. Want we hoeven niet allemaal een raket naar Mars te
+      lanceren. Soms begint een beetje positiviteit gewoon bij jou en mij.
+
+      Met Nation of Positivity bied ik mijn atelier en mijn eigen werk aan in
+      een kleine online shop; mijn bescheiden initiatief, mijn
+      spreekwoordelijke duit in het zakje. Met liefde gemaakt om met heel veel
+      liefde te kunnen geven. Samen zorgen we voor een beetje meer positiviteit
+      in de wereld.
+    run: https://nationofpositivity.com
+    image: https://christophe.vg/about/images/banner/cv-nationofpositivity.png
+    instagram: https://www.instagram.com/NationOfPositivity
+    when: 28 oktober 2024
+
+  virtue-of-tech-agnosticism:
+    kind: writing
+    title: The Virtue of Technology Agnosticism
+    description: |
+      When I tell people that I am technology agnostic, they open their eyes a
+      little bit more. Usually something along the lines of: “But Christophe,
+      you’ve been programming longer than I’ve been alive, you have more
+      hardware devices in your home than I’ve ever heard of, and your personal
+      software development library contains books older than some papyrus in
+      the museum of ancient history. How on earth can you, of all people, be
+      technology agnostic?”
+      And, you know, the problem is, they are right, in a way.
+    read: https://christophe.vg/about/Virtue-of-Technology-Agnosticism
+    image: https://christophe.vg/about/images/header/virtue-of-technology-agnosticism.png
+    instagram: https://www.instagram.com/p/DA2wQdxs5AX
+    when: 2 october 2024
+
+  enderman:
+    title: Enderman
+    description: |
+      Why? Because the Enderman can! 😇
+
+      My son, like many sons (and daughters) loves Minecraft. He especially
+      likes the Enderman. When he wanted to use the character as a base for a
+      school project, but couldn’t find a model to start from, we started
+      brainstorming.
+    info: https://christophe.vg/makes/Enderman
+    image: https://christophe.vg/makes/images/header/enderman.jpeg
+    instagram: https://www.instagram.com/p/DAeF2c-qcvX
+    thingiverse: https://www.thingiverse.com/thing:6781339
+    when: 28 september 2024
+
+  getijden:
+    kind: app
+    title: Getijden
+    description: |
+      Deze getijden app, maakt de informatie gepubliceerd door het "Agentschap
+      Maritieme Dienstverlening en Kust" bruikbaar voor je persoonlijke
+      digitale kalender.
+    run: https://getijden.app.homemadebycvg.com
+    image: /images/getijden.png
+    github: https://github.com/christophevg/getijden
+    instagram: https://www.instagram.com/p/DABWjk4sgT_
+    when: 17 september 2024
+
+  leadership-101:
+    kind: writing
+    title: Leadership 101
+    description: |
+      Why do I believe I'm a good team lead? Of course I do, because if I
+      didn't, why would I pursue a role that is so fundamental to people, that
+      can make or break the work of others?! So, how did I come up with this
+      new direction for the next professional chapter in my life? And why does
+      it involve leadership?
+    read: https://christophe.vg/about/Leadership-101
+    image: https://christophe.vg/about/images/header/leadership.jpeg
+    instagram: https://www.instagram.com/p/C_-ZnDQKwAb
+    when: 16 september 2024
+
+  holiday-mode:
+    kind: writing
+    title: Holiday Mode
+    description: |
+      As a consulting nomad, I’m confronted with two kinds of holiday: the one
+      most of us have, a break from the busyness at work, and the
+      in-between-clients periods. And they serve different purposes...
+    read: https://christophe.vg/about/Holiday-Mode
+    image: https://christophe.vg/about/images/header/holiday-mode.jpeg
+    instagram: https://www.instagram.com/p/C_TYWoyPGx3
+    when: 27 august 2024
+
+  bc-art:
+    title: B/C Art
+    description: |
+      Ever since I designed and had my concrete house constructed, I wanted to
+      create some personal concrete art pieces. So, as usual, it took a few
+      years before I allowed myself some time to start working on it.
+    info: https://christophe.vg/makes/BC-Art
+    image: https://christophe.vg/makes/images/full/bc-art/bc-art.jpeg
+    instagram: https://www.instagram.com/p/C_GCmRyqs1a
+    when: 25 august 2024
+
+  50-shades-of-ceremony:
+    kind: writing
+    title: 50 Shades of Ceremony
+    description: |
+      This is the third instalment in a triptych about me being a software
+      architect. After the **what** and the **why**, this time I show **how** I
+      deal with software architecture.
+    read: https://christophe.vg/about/50-Shades-of-Ceremony
+    image: https://christophe.vg/about/images/header/50-shades-of-ceremony.jpeg
+    instagram: https://www.instagram.com/p/C-2bmlngzxi
+    when: 19 august 2024
+
+  artware-city:
+    title: Artware City
+    description: |
+      Welcome to Artware City! Stroll down Memory Lane, right onto Hard Disk
+      Drive.
+      35 years of hardware suddenly became a city full of memories.
+    info: https://christophe.vg/makes/Artware-City
+    image: https://christophe.vg/makes/images/header/artware-city.jpeg
+    instagram: https://www.instagram.com/p/C-NiSLxKsVW/
+    when: 30 june 2024
+
+  problem-seeker:
+    kind: writing
+    title: Problem Seeker
+    description: |
+      In a second part of my series of articles on my life as a software
+      architect, I dive into the foundations that define the problem seeker I
+      am. After the "what?", I now explore the "why?".
+    read: https://christophe.vg/about/Problem-Seeker
+    image: https://christophe.vg/about/images/header/problem-seeker.jpeg
+    instagram: https://www.instagram.com/p/C-Nh_pUKoHm/
+    when: 26 june 2024
+
+  super-mario-block:
+    title: Super Mario Question Mark Block
+    description: |
+      Nobody knows what’s inside the Super Mario Question Mark Block… until you open it!
+    info: https://christophe.vg/makes/Super-Mario-Question-Mark-Block
+    image: https://christophe.vg/makes/images/header/super-mario-question-mark-block.jpeg
+    instagram: https://www.instagram.com/p/C-Nh0tfqHq5/
+    when: 20 april 2024
+
+  resin-in-wood-coasters:
+    title: Resin in Wood Coasters
+    description: |
+      V for Vendetta? No, V for a Very important Queen V. Birthdays are a great
+      excuse to experiment with new materials and techniques: Resin in wood!
+    info: https://christophe.vg/makes/Resin-in-Wood-Coasters
+    image: https://christophe.vg/makes/images/header/resin-in-wood-coasters.jpeg
+    instagram: https://www.instagram.com/p/C-NhlFuqw95/
+    when: 14 march 2024
+
+  hosted-flasks:
+    kind: module
+    title: Hosted Flasks
+    description: |
+      I have [several small Flask apps](https://apps.homemadebycvg.com), which
+      don't use a lot of resources. For some time I'm enjoying the hosting
+      services of [Render](https://render.com). Their free tier is great, but
+      (understandably) "_free instances will spin down with inactivity, which
+      can delay requests by 50 seconds or more._". Their [web service
+      pricing](https://render.com/pricing#compute) is more than reasonable, yet
+      coughing up $7/month for each single little Flask app is a bit too much.
+      So, with Hosted Flasks I can simply bring them all together on a single
+      web service, which doesn't spin down.
+    run: https://apps.homemadebycvg.com
+    docs: https://hosted-flasks.readthedocs.io
+    github: https://github.com/christophevg/hosted-flasks
+    image: /images/hosted-flasks.png
+    pypi: https://pypi.org/project/hosted-flasks
+    instagram: https://www.instagram.com/p/C-Ng8c5qnqi/
+    when: 13 march 2024
+
+  bpmn-tools:
+    kind: module
+    title: BPMN Tools
+    description: |
+      BPMN Tools enables the generation of BPMN diagrams from Python. It
+      provides an object model and several layouting options, aswell as
+      abstracted builders.
+    docs: https://bpmn-tools.readthedocs.io
+    github: https://github.com/christophevg/bpmn-tools
+    image: /images/bpmn-tools.png
+    pypi: https://pypi.org/project/bpmn-tools
+    instagram: https://www.instagram.com/p/C-NgrtUq1f7/
+    when: 5 may 2023
+
+  letmelearn:
+    kind: app
+    title: Let me Learn
+    description: |
+      Toen Quizlet grotendeels betalend werd, en dochterlief enkele belangrijke
+      toetsen in het verschiet had, was er maar één ding dat ik kon doen...
+      "Let me Learn!" is een online/web toepassinkje dat toelaat om op
+      verschillende manieren begrippen/woorden/... te oefenen, leren en te testen.
+      Want wat je zelf implementeert... 😇
+    run: https://letmelearn.app.homemadebycvg.com
+    image: https://apps.homemadebycvg.com/hosted/images/letmelearn.png
+    github: https://github.com/christophevg/letmelearn
+    instagram: https://www.instagram.com/p/C-NgSawqmtn/
+    when: 29 april 2023
+
+  baseweb-demo:
+    kind: app
+    title: Baseweb Demo
+    description: |
+      Baseweb is my little bit of Python serving a lot of Vuetify goodness, all
+      rolled up in a little Python Module. The baseweb-demo repository contains
+      a "demo implementation", showing off many of baseweb's features.
+    run: https://baseweb-demo.app.homemadebycvg.com/
+    github: https://github.com/christophevg/baseweb-demo
+    image: https://apps.homemadebycvg.com/hosted/images/baseweb-demo.png
+    when: 26 november 2022
+
+  oatk:
+    kind: module
+    title: OAuth ToolKit
+    description: |
+      OAuth is a standard and OAuthToolKit is my minimal implementation of some
+      aspects of it.
+      **NOTE**: The demo app doesn't use nor store any personal information in
+      any way! Just the token is validated by the API.
+    run: https://oatk-demo.app.homemadebycvg.com/
+    github: https://github.com/christophevg/oatk
+    image: https://apps.homemadebycvg.com/hosted/images/oatk-demo.png
+    pypi: https://pypi.org/project/oatk
+    instagram: https://www.instagram.com/p/C-NgCSMK0jF/
+    when: 15 october 2022
+
+  wooden-globe:
+    title: Wooden Globe
+    description: |
+      The world is never enough for best of friends. Still, this combination of
+      wood and eva foam will have to do.
+    info: https://christophe.vg/makes/Wooden-Globe
+    image: https://christophe.vg/makes/images/header/wooden-globe.jpeg
+    instagram: https://www.instagram.com/p/C-Nfm9WqX6K/
+    when: 4 september 2022
+
+  i-software-architect:
+    kind: writing
+    title: I, Software Architect
+    description: |
+      "Hey, Christophe, what do you do?" I get the question rather often. The
+      most correct answer, "I'm a Software Architect", benefits from a little
+      more explanation, both for most non-IT friends and some colleagues 😇.
+      This article is the first in a series of articles on my life as a
+      software architect.
+    read: https://christophe.vg/about/I-Software-Architect
+    image: https://christophe.vg/about/images/header/software-architect.jpeg
+    instagram: https://www.instagram.com/p/C-NfOlCqLVF/
+    when: 5 april 2021
+
+  howifeel:
+    kind: app
+    title: How I Feel
+    description: |
+      _Putting the dot on the i of micro social network._
+      _Share your mood with who you want and how you want. And nothing more._
+      How I Feel began as a "Let me show you in one hour what software
+      development really is about." and turned out to be much more...
+    run: https://howifeel.app.homemadebycvg.com
+    image: https://apps.homemadebycvg.com/hosted/images/howifeel.png
+    github: https://github.com/christophevg/howifeel
+    instagram: https://www.instagram.com/p/C-Ne8SnKIaP/
+    when: 22 february 2021
+
+  deatomizer:
+    title: Series 4 De-Atomizer
+    description: |
+      A boy in black needs a decent weapon, and I need less excuses to build a
+      true Series 4 De-Atomizer.
+    info: https://christophe.vg/makes/Deatomizer
+    image: https://christophe.vg/makes/images/header/deatomizer.jpeg
+    instagram: https://www.instagram.com/p/C-NeuDMqXJ8/
+    when: 17 september 2021
+
+  padel-racket:
+    title: Padel Racket
+    description: |
+      If padel rackets are basically made out of eva foam, this must be an ace
+      for my dear old friend.
+    info: https://christophe.vg/makes/Padel-racket
+    image: https://christophe.vg/makes/images/header/padel-racket.jpeg
+    instagram: https://www.instagram.com/p/C-NecrwKU8T/
+    when: 27 august 2021
+
+  baseweb:
+    kind: module
+    title: Baseweb
+    description: |
+      Baseweb is my little bit of Python serving a lot of Vuetify goodness, all
+      rolled up in a little Python Module.
+    run: https://baseweb-demo.app.homemadebycvg.com/
+    docs: https://baseweb.readthedocs.io/
+    github: https://github.com/christophevg/baseweb
+    image: https://apps.homemadebycvg.com/hosted/images/baseweb-demo.png
+    pypi: https://pypi.org/project/baseweb
+    instagram: https://www.instagram.com/p/C-NeLWJqCB9/
+    when: 5 february 2020
+
+  pypi-template:
+    kind: module
+    title: PyPi Template
+    description: |
+      To manage the [Python modules I
+      maintain](https://pypi.org/user/christophe.vg/), I created PyPi Template,
+      a set of templates to generate project/module-related files using a high
+      level of convention. Because I want to focus on the module, not its
+      maintenance 😇
+      PyPi Template provides a single setup to develop, test, document and
+      publish Python modules.
+    docs: https://pypi-template.readthedocs.io/
+    github: https://github.com/christophevg/pypi-template
+    image: /images/pypi-template.png
+    pypi: https://pypi.org/project/pypi-template
+    instagram: https://www.instagram.com/p/C-NdxAjKtfJ/
+    when: 29 october 2018
+
+  pokemon-christmas-lights:
+    title: Pokemon Christmas Lights
+    description: |
+      In december 2017 I joined in a Secret Santa event, organised by Henk
+      Reickaert, amongst others known for his fun making endeavours in the
+      Koterij.
+    info: https://christophe.vg/makes/Pokemon-Christmas-Lights
+    image: https://christophe.vg/makes/images/header/pokemon-christmas-lights.jpeg
+    github: https://github.com/christophevg/PokemonChristmasLights
+    instagram: https://www.instagram.com/p/C-NdiagKnmP/
+    when: 3 december 2017
+
+  no-excuses:
+    kind: writing
+    title: No Excuses
+    description: |
+      While visiting an exposition on and discussing the intersection of
+      design, technology and care in the home, I found myself once again
+      confronted with this thing that has been bothering me on and off for
+      quite some time now.
+    read: https://christophe.vg/about/No_Excuses
+    image: https://christophe.vg/about/images/header/no-excuses.png
+    instagram: https://www.instagram.com/p/C-NdSJTqcR1/
+    when: 13 november 2017
+
+  c3po-luisterbox:
+    title: C3PO Luisterbox
+    description: |
+      In het kader van het C3PO - Collaborative City Co-design PlatfOrm
+      contacteerde Studio Dott mij voor de ontwikkeling van een interactieve
+      luisterbox.
+    info: https://christophe.vg/makes/C3PO-Luisterbox
+    image: https://christophe.vg/makes/images/header/c3po-luisterbox.jpeg
+    instagram: https://www.instagram.com/p/C-Nc-BDqOuv/
+    when: 1 june 2017
+
+  ezrpi:
+    title: EZRPi
+    description: |
+      The EZRPi is a Raspberry Pi HAT, carrying a Silicon Labs EZR32 Sub-GHz
+      wireless microcontroller (MCU), that adds subGHz radio capabilities to
+      the RPi.
+    info: https://christophe.vg/makes/EZRPi
+    github: https://github.com/christophevg/EZRpi
+    image: https://christophe.vg/makes/images/header/ezrpi-v1.jpeg
+    instagram: https://www.instagram.com/p/C-NcnsHqVE8/
+    when: 10 march 2017
+
+  fri3d-badge:
+    title: Fri3d Badge
+    description: |
+      In 2014 Anthony and I hacked together the first edition of [Fri3d
+      Camp](https://fri3d.be), a family-friendly hacker camp. Two years later,
+      we did it again, now with a team of 8 great, like-minded souls. Besides
+      being in charge of organising the content, I also took on the job to
+      design and produce a custom Arduino badge for every one of the 299+1
+      attendees.
+    info: https://christophe.vg/makes/Fri3d-Badge
+    image: https://christophe.vg/makes/images/header/fri3d-badge.jpeg
+    github: https://github.com/christophevg/Fri3dBadge2016
+    instagram: https://www.instagram.com/p/C-NcL6RqC2U/
+    when: 15 august 2016
+
+  inspection-robot:
+    title: Inspection Robot
+    description: |
+      In 2015 I was contracted by a very large industrial/pharmaceutical
+      company to design and implement a solution for their QA team to be able
+      to inspect certain locations in their factory that were very hard to
+      reach. The combination of a height restriction of about 12cm and the need
+      to be able to carry a sensor on a rotating arm were challenging.
+    info: https://christophe.vg/makes/Inspection-Robot
+    github: https://github.com/christophevg/rover5
+    image: https://christophe.vg/makes/images/header/inspection-robot.jpeg
+    instagram: https://www.instagram.com/p/C-NbiFRqlz6/
+    when: 1 september 2015
+
+  revisiting-higher-education:
+    kind: writing
+    title: Revisiting Higher Education
+    description: |
+      Having decided to return to full-time studying presented me with an
+      incredible opportunity to make a personal evaluation of our education
+      system and academic institute. In the end, there are few of us - aged 40
+      and attending courses full-time.
+    read: https://christophe.vg/about/Revisiting_Higher_Education
+    image: https://christophe.vg/about/images/header/education.jpg
+    instagram: https://www.instagram.com/p/C-NahGsKFLU/
+    when: 1 june 2013

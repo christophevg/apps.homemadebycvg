@@ -10,8 +10,8 @@
 [submodule "oatk"]
 	path = oatk
 	url = https://github.com/christophevg/oatk
-[submodule "homemadebycvg.com"]
-	path = homemadebycvg.com
+[submodule "homemadebycvg"]
+	path = homemadebycvg
 	url = https://github.com/christophevg/homemadebycvg.com.git
 [submodule "getijden"]
 	path = getijden
@@ -19,9 +19,3 @@
 [submodule "nationofpositivity"]
 	path = nationofpositivity
 	url = git@github.com:christophevg/nationofpositivity.git
-[submodule "checkin"]
-	path = checkin
-	url = git@github.com:christophevg/checkin.git
-[submodule "architectaday"]
-	path = architectaday
-	url = git@github.com:christophevg/architectaday.git
