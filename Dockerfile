@@ -50,7 +50,7 @@ RUN pip install --root-user-action=ignore uv
 # Install each app's dependencies from their requirements files
 # Prefer requirements.base.txt (clean deps) over requirements.txt (frozen with all transitive deps)
 RUN set -e; \
-  for app in hello parking nationofpositivity homemadebycvg getijden letmelearn baseweb-demo howifeel oatk; do \
+  for app in hello parking nationofpositivity homemadebycvg getijden letmelearn howifeel oatk; do \
     echo "Installing dependencies for $app..."; \
     if [ -f /app/apps/$app/requirements.base.txt ]; then \
         pip install --root-user-action=ignore --no-cache-dir -r /app/apps/$app/requirements.base.txt; \
@@ -63,7 +63,7 @@ RUN set -e; \
 
 # Sync uv-based apps
 RUN set -e; \
-  for app in frontpage; do \
+  for app in frontpage baseweb-demo; do \
     if [ -f /app/apps/$app/pyproject.toml ]; then \
       uv --project /app/apps/$app sync; \
     fi; \
