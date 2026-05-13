@@ -38,7 +38,7 @@ COPY oatk/ /app/apps/oatk/
 RUN pip install -U pip
 
 # Pin gunicorn version for eventlet compatibility
-RUN pip install --no-cache-dir gunicorn==23.0.0 eventlet
+RUN pip install --no-cache-dir gunicorn==25.3.0 eventlet
 
 # Install each app's dependencies from their requirements files
 # Prefer requirements.base.txt (clean deps) over requirements.txt (frozen with all transitive deps)
