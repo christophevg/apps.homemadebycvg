@@ -43,16 +43,16 @@ RUN pip install --no-cache-dir gunicorn==25.3.0 eventlet
 # Install each app's dependencies from their requirements files
 # Prefer requirements.base.txt (clean deps) over requirements.txt (frozen with all transitive deps)
 RUN set -e; \
-    for app in hello parking nationofpositivity homemadebycvg getijden letmelearn baseweb-demo howifeel oatk; do \
-        echo "Installing dependencies for $app..."; \
-        if [ -f /app/apps/$app/requirements.base.txt ]; then \
-            pip install --no-cache-dir -r /app/apps/$app/requirements.base.txt; \
-        elif [ -f /app/apps/$app/requirements.txt ]; then \
-            pip install --no-cache-dir -r /app/apps/$app/requirements.txt; \
-        else \
-            echo "No requirements found for $app"; \
-        fi; \
-    done
+  for app in hello parking nationofpositivity homemadebycvg getijden letmelearn baseweb-demo howifeel oatk; do \
+    echo "Installing dependencies for $app..."; \
+    if [ -f /app/apps/$app/requirements.base.txt ]; then \
+        pip install --no-cache-dir -r /app/apps/$app/requirements.base.txt; \
+    elif [ -f /app/apps/$app/requirements.txt ]; then \
+        pip install --no-cache-dir -r /app/apps/$app/requirements.txt; \
+    else \
+        echo "No requirements found for $app"; \
+    fi; \
+  done
 
 # Copy nginx configuration
 COPY nginx.conf /etc/nginx/nginx.conf
