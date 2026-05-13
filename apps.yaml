@@ -10,6 +10,8 @@ apps:
 
   hello:
     path: /hello
+    hostname: hello.app.homemadebycvg.com
+    local: hello.app.homemadebycvg.local:8080
     image: /images/hello.png
     description: |
       The obligatory `hello world` example, serving
