@@ -33,6 +33,10 @@ COPY howifeel/ /app/apps/howifeel/
 COPY oatk/ /app/apps/oatk/
 
 # Install common dependencies
+
+# Upgrade pip
+RUN pip install -U pip
+
 # Pin gunicorn version for eventlet compatibility
 RUN pip install --no-cache-dir gunicorn==23.0.0 eventlet
 
