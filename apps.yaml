@@ -20,7 +20,6 @@ apps:
   parking:
     hide: true
     hostname:
-      - parking.app.homemadebycvg.com
       - archiku.com
       - archiku.org
     local: parking.app.homemadebycvg.local:8080
