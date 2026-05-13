@@ -48,7 +48,6 @@
 
     <div class="pt-1 ps-sm-3 ps-md-5 pe-sm-3 pe-md-5">
       {% for app in apps %}
-      {% if not app.hide %}
       <div class="card mb-3">
         <div class="row g-0">
           <div class="col-md-4 appimage"{% if app.image %} style="background-image:url('/hosted{{ app.image }}');"{% endif %}></div>
@@ -90,7 +89,6 @@
           </div>
         </div>
       </div>
-      {% endif %}
       {% endfor %}
     </div>
 

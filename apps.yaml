@@ -17,15 +17,6 @@ apps:
       The obligatory `hello world` example, serving
       a basic, plain [Flask](https://flask.palletsprojects.com) app.
 
-  parking:
-    hide: true
-    hostname:
-      - archiku.com
-      - archiku.org
-    local: parking.app.homemadebycvg.local:8080
-    description: |
-      a general purpose parking/landing/coming soon page
-
   nationofpositivity:
     title: Nation of Positivity
     hostname: nationofpositivity.com
