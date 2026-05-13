@@ -39,13 +39,13 @@ COPY apps.yaml /app/apps/apps.yaml
 # Install common dependencies
 
 # Upgrade pip
-RUN pip install -U pip
+RUN pip install --root-user-action=ignore -U pip
 
 # Pin gunicorn version for eventlet compatibility
-RUN pip install --no-cache-dir gunicorn==25.3.0 eventlet
+RUN pip install --root-user-action=ignore --no-cache-dir gunicorn==25.3.0 eventlet
 
 # Install uv
-RUN pip install uv
+RUN pip install --root-user-action=ignore uv
 
 # Install each app's dependencies from their requirements files
 # Prefer requirements.base.txt (clean deps) over requirements.txt (frozen with all transitive deps)
@@ -53,9 +53,9 @@ RUN set -e; \
   for app in hello parking nationofpositivity homemadebycvg getijden letmelearn baseweb-demo howifeel oatk; do \
     echo "Installing dependencies for $app..."; \
     if [ -f /app/apps/$app/requirements.base.txt ]; then \
-        pip install --no-cache-dir -r /app/apps/$app/requirements.base.txt; \
+        pip install --root-user-action=ignore --no-cache-dir -r /app/apps/$app/requirements.base.txt; \
     elif [ -f /app/apps/$app/requirements.txt ]; then \
-        pip install --no-cache-dir -r /app/apps/$app/requirements.txt; \
+        pip install --root-user-action=ignore --no-cache-dir -r /app/apps/$app/requirements.txt; \
     else \
         echo "No requirements found for $app"; \
     fi; \
