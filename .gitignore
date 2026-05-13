@@ -3,3 +3,4 @@
 .env.local
 .venv
 .ruff_cache
+.DS_Store
