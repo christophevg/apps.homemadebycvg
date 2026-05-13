@@ -22,6 +22,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 WORKDIR /app
 
 # Copy all app source code first (needed for their requirements files)
+COPY frontpage/ /app/apps/frontpage
 COPY hello/ /app/apps/hello/
 COPY parking/ /app/apps/parking/
 COPY nationofpositivity/ /app/apps/nationofpositivity/
@@ -32,6 +33,9 @@ COPY baseweb-demo/ /app/apps/baseweb-demo/
 COPY howifeel/ /app/apps/howifeel/
 COPY oatk/ /app/apps/oatk/
 
+# Copy apps.yaml
+COPY apps.yaml /app/apps/apps.yaml
+
 # Install common dependencies
 
 # Upgrade pip
@@ -39,6 +43,9 @@ RUN pip install -U pip
 
 # Pin gunicorn version for eventlet compatibility
 RUN pip install --no-cache-dir gunicorn==25.3.0 eventlet
+
+# Install uv
+RUN pip install uv
 
 # Install each app's dependencies from their requirements files
 # Prefer requirements.base.txt (clean deps) over requirements.txt (frozen with all transitive deps)
@@ -51,6 +58,14 @@ RUN set -e; \
         pip install --no-cache-dir -r /app/apps/$app/requirements.txt; \
     else \
         echo "No requirements found for $app"; \
+    fi; \
+  done
+
+# Sync uv-based apps
+RUN set -e; \
+  for app in frontpage; do \
+    if [ -f /app/apps/$app/pyproject.toml ]; then \
+      uv --project /app/apps/$app sync; \
     fi; \
   done
 

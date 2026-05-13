@@ -1,6 +1,6 @@
 -include ~/.claude/Makefile
 
-.PHONY: build run stop logs clean shell
+.PHONY: build run stop logs clean shell frontpage
 
 IMAGE     = apps-homemadebycvg:container
 CONTAINER = apps-homemadebycvg
@@ -95,3 +95,12 @@ add:
 
 update:
 	git submodule foreach git pull origin master
+
+# Frontpage
+
+GUNICORN = gunicorn -k uvicorn.workers.UvicornH11Worker
+frontpage:
+	uv run --project frontpage $(GUNICORN) frontpage:app --reload
+
+format:
+	uv run --project frontpage ruff check --fix frontpage/

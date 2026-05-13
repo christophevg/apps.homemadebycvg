@@ -1,0 +1,100 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apps Homemade by CVG</title>
+    <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+    <style>
+      .appimage {
+        min-height:150px;
+        background-image:url("/img/app-default.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="theme-color" content="#fafafa">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="/img/logo.svg" height="50px" class="d-inline-block">
+          Apps Homemade by CVG
+        </a>
+        <div class="navbar-nav">
+          <a class="nav-link" href="https://christophe.vg" target="_blank">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="px-4 pt-5 my-5 text-center border-bottom">
+      <h1 class="display-4 fw-bold">{{ title }}</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+          {{ description }}
+        </p>
+      </div>
+    </div>
+
+    <div class="pt-1 ps-sm-3 ps-md-5 pe-sm-3 pe-md-5">
+      {% for app in apps %}
+      {% if not app.hide %}
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4 appimage"{% if app.image %} style="background-image:url('/hosted{{ app.image }}');"{% endif %}></div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{ app.title or app.name }}</h5>
+              {% if app.description %}
+              <p class="card-text">{{ app.description | safe }}</p>
+              {% endif %}
+              {% if app.path %}
+                <p class="card-text">
+                  {% for path in ensure_list(app.path) %}
+                  <i class="bi-globe2" style="color:cornflowerblue;;margin-right:5px"></i>
+                  <a href="{{ path }}">{{ path }}</a><br>
+                  {% endfor %}
+                </p>
+              {% endif %}
+              {% if app.hostname %}
+              <p class="card-text">
+                {% for name in ensure_list(app.hostname) %}
+                <i class="bi-globe2" style="color:cornflowerblue;;margin-right:5px"></i>
+                <a href="//{{ name }}">{{ name }}</a><br>
+                {% endfor %}
+              </p>
+              {% endif %}
+              {% if app.github %}
+              <p class="card-text">
+                <i class="bi-github" style="color:cornflowerblue;;margin-right:5px"></i>
+                <a href="https://github.com/{{ app.github }}">https://github.com/{{ app.github }}</a>
+              </p>
+              {% endif %}
+              {% if app.docs %}
+              <p class="card-text">
+                <i class="bi-book" style="color:cornflowerblue;margin-right:5px"></i>
+                <a href="{{ app.docs }}">{{ app.docs }}</a>
+              </p>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+
+    <script src="/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>

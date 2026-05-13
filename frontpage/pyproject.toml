@@ -1,0 +1,34 @@
+[project]
+name = "frontpage"
+version = "0.1.0"
+description = "Frontpage application for listing hosted applications."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "gunicorn>=25.3.0",
+  "markdown>=3.10.2",
+  "pyyaml>=6.0.3",
+  "quart>=0.20.0",
+  "ruff>=0.15.12",
+  "uvicorn>=0.46.0",
+]
+
+# Linting configuration
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+indent-width = 2
+
+[tool.ruff.lint]
+select = [
+  "E",   # pycodestyle errors
+  "W",   # pycodestyle warnings
+  "F",   # pyflakes
+  "I",   # isort
+  "B",   # flake8-bugbear
+  "C4",  # flake8-comprehensions
+  "UP",  # pyupgrade
+]
+ignore = [
+  "E501",  # line too long (handled by formatter)
+]

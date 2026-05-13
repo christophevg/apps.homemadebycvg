@@ -9,56 +9,26 @@ description: |
 apps:
 
   hello:
-    imports:
-      hello : hello/__init__.py
     path: /hello
-    hostname: hello.app.homemadebycvg.com
     image: /images/hello.png
     description: |
       The obligatory `hello world` example, serving
       a basic, plain [Flask](https://flask.palletsprojects.com) app.
-    track:
-      - hello_world
-    log:
-      headers:
-        - CF-Connecting-IP
 
   parking:
     hide: true
-    imports:
-      parking : parking/__init__.py
     hostname:
       - parking.app.homemadebycvg.com
       - archiku.com
       - archiku.org
+    local: parking.app.homemadebycvg.local:8080
     description: |
       a general purpose parking/landing/coming soon page
-    track:
-      - coming_soon
-    log:
-      headers:
-        - CF-Connecting-IP
-
-  schema-tools:
-    hide: true
-    imports:
-      schema-tools : schema-tools/__init__.py
-    path: /schema-tools
-    description: |
-      schema-tools ubl validation
-    track:
-      - home
-      - validate
-    log:
-      headers:
-        - CF-Connecting-IP
 
   nationofpositivity:
-    imports:
-      nationofpositivity : nationofpositivity/shop/__init__.py
-    app: server
     title: Nation of Positivity
     hostname: nationofpositivity.com
+    local: nationofpositivity.local:8080
     image: /images/nationofpositivity.svg
     description: |
       Geef het geschenk van _positiviteit_! In de Nation of Positivity vind je
@@ -67,61 +37,32 @@ apps:
       Met Nation of Positivity bied ik mijn atelier en eigen werk aan in een
       kleine online shop. Met liefde gemaakt om met veel liefde te geven. Samen
       zorgen voor wat meer positiviteit in de wereld.
-    track:
-      - landing
-      - shop
-      - products
-      - products-id
-      - basket
-      - order-id
-      - faq
-      - contact
-      - algemene-voorwaarden
-    log:
-      headers:
-        - CF-Connecting-IP
 
   homemade:
-    imports:
-      homemade : homemadebycvg.com/__init__.py
     title: Homemade By CVG
     hostname: homemadebycvg.com
+    local: homemadebycvg.local:8080
     github: christophevg/homemadebycvg.com
     image: /images/homemade.png
     description: |
       I don't only make apps. I sometimes also endulge in some form of physical
       crafting. The top-level landing page app is recursively also hosted as a
       hosted flask.
-    track:
-      - home
-    log:
-      headers:
-        - CF-Connecting-IP
 
   getijden:
-    imports:
-      getijden : getijden/web/__init__.py
     title: Getijden
     hostname: getijden.app.homemadebycvg.com
+    local: getijden.app.homemadebycvg.local:8080
     github: christophevg/getijden
     image: /images/getijden.png
     description: |
       Deze getijden app, maakt de informatie van het "Agentschap Maritieme
       Dienstverlening en Kust" direct bruikbaar voor je persoonlijke kalender.
-    track:
-      - home
-      - cal
-    log:
-      headers:
-        - CF-Connecting-IP
 
   letmelearn:
-    imports:
-      letmelearn     : letmelearn/letmelearn/__init__.py
-      letmelearn.web : letmelearn/letmelearn/web.py
-    app: letmelearn.web:server
     title: Let me Learn
     hostname: letmelearn.app.homemadebycvg.com
+    local: letmelearn.app.homemadebycvg.local:8080
     github: christophevg/letmelearn
     image: /images/letmelearn.png
     description: |
@@ -130,22 +71,11 @@ apps:
       "Let me Learn!" is een online/web toepassinkje dat toelaat om op
       verschillende manieren begrippen/woorden/... te oefenen, leren en te testen.
       Want wat je zelf implementeert... 😇
-    track:
-      - landing
-      - about
-      - quiz
-      - topics
-      - training
-    log:
-      headers:
-        - CF-Connecting-IP
 
   baseweb-demo:
-    imports:
-      baseweb-demo : baseweb-demo/__init__.py
-    app: server
     title: Baseweb Demo
     hostname: baseweb-demo.app.homemadebycvg.com
+    local: baseweb-demo.app.homemadebycvg.local:8080
     github: christophevg/baseweb-demo
     docs: https://baseweb.readthedocs.io
     image: /images/baseweb-demo.png
@@ -155,31 +85,11 @@ apps:
       rolled up in a little [Python Module](https://pypi.org/project/baseweb/).
       The [baseweb-demo](https://github.com/christophevg/baseweb-demo) repository
       contains a "demo implementation", showing off many of baseweb's features.
-    track:
-      - landing
-      - page1
-      - page2
-      - page3
-      - page4
-      - page5
-      - page6
-      - page7
-      - page7-id
-      - protected-page
-      - components-pagewithstatus
-      - components-pagewithbanner
-      - components-collectionview
-      - components-linechart
-      - components-processdiagram
-    log:
-      headers:
-        - CF-Connecting-IP
 
   howifeel:
-    imports:
-      howifeel : howifeel/howifeel/__init__.py
     title: How I Feel
     hostname: howifeel.app.homemadebycvg.com
+    local: howifeel.app.homemadebycvg.local:8080
     github: christophevg/howifeel
     image: /images/howifeel.png
     description: |
@@ -187,19 +97,11 @@ apps:
       _Share your mood with who you want and how you want. And nothing more._
       How I Feel began as a "Let me show you in one hour what software
       development really is about." and turned out to be much more...
-    track:
-      - index
-      - show_about_page
-    log:
-      headers:
-        - CF-Connecting-IP
 
   oatk-demo:
-    imports:
-      google: oatk/examples/google/app.py
-    app: server
     title: OAuthToolKit Demo
     hostname: oatk-demo.app.homemadebycvg.com
+    local: oath-demo.app.homemadebycvg.local:8080
     github: christophevg/oatk
     image: /images/oatk-demo.png
     description: |
@@ -209,35 +111,3 @@ apps:
       then uses that authentication to access a protected API endpoint.
       **NOTE** No personal information is used or stored in any way! Just the
       token is validated by the API.
-    track:
-      - home
-    log:
-      headers:
-        - CF-Connecting-IP
-
-  # checkin:
-  #   imports:
-  #     checkin: checkin/checkin/__init__.py
-  #   app: server
-  #   hide: true
-  #   title: VG Airlines Self Check-In Form
-  #   hostname: checkin.app.homemadebycvg.com
-  #   description: Check in with VG Airlines!
-  #   track:
-  #     - landing
-  #   log:
-  #     headers:
-  #       - CF-Connecting-IP
-
-  # architectaday:
-  #   imports:
-  #     architectaday: architectaday/web/__init__.py
-  #   hide: true
-  #   title: Architect A Day
-  #   hostname: architectaday.com
-  #   description: Architect A Day
-  #   track:
-  #     - index
-  #   log:
-  #     headers:
-  #       - CF-Connecting-IP
