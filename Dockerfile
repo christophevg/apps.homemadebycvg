@@ -61,6 +61,11 @@ RUN set -e; \
     fi; \
   done
 
+# Limit baseweb and oatk version
+RUN pip install --root-user-action=ignore -U "baseweb<0.5.0"
+RUN pip install --root-user-action=ignore -U "oatk<0.2.0"
+
+
 # Sync uv-based apps
 RUN set -e; \
   for app in frontpage baseweb-demo; do \
