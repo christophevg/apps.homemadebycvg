@@ -41,6 +41,16 @@ apps:
       crafting. The top-level landing page app is recursively also hosted as a
       hosted flask.
 
+  roomz:
+    title: Roomz
+    hostname: roomz.app.homemadebycvg.com
+    local: roomz.app.homemadebycvg.local:8080
+    github: christophevg/roomz
+    docs: https://roomz.readthedocs.io
+    image: /images/roomz.png
+    description: |
+      Roomz is my real-time private chatroom web service that uses magic link authentication and JWT-governed sessions. It provides a secure, invite-only chat, usually for bot interactions. It’s the first new project I’ve built using the new async Baseweb.
+
   getijden:
     title: Getijden
     hostname: getijden.app.homemadebycvg.com

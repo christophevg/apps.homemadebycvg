@@ -32,6 +32,7 @@ COPY letmelearn/ /app/apps/letmelearn/
 COPY baseweb-demo/ /app/apps/baseweb-demo/
 COPY howifeel/ /app/apps/howifeel/
 COPY oatk/ /app/apps/oatk/
+COPY roomz/ /app/apps/roomz/
 
 # Copy apps.yaml
 COPY apps.yaml /app/apps/apps.yaml
@@ -66,9 +67,10 @@ RUN pip install --root-user-action=ignore -U "baseweb<0.5.0"
 RUN pip install --root-user-action=ignore -U "oatk<0.2.0"
 
 
+
 # Sync uv-based apps
 RUN set -e; \
-  for app in frontpage baseweb-demo; do \
+  for app in frontpage baseweb-demo roomz; do \
     if [ -f /app/apps/$app/pyproject.toml ]; then \
       uv --project /app/apps/$app sync; \
     fi; \

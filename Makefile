@@ -77,6 +77,9 @@ status:
 restart-app:
 	$(RUNTIME) exec $(CONTAINER) supervisorctl restart $(APP)
 
+# All-in-one target
+rebuild: stop build run logs
+
 # Health check
 health:
 	@echo "Checking container health..."
