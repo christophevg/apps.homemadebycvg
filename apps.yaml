@@ -103,7 +103,7 @@ apps:
   oatk-demo:
     title: OAuthToolKit Demo
     hostname: oatk-demo.app.homemadebycvg.com
-    local: oath-demo.app.homemadebycvg.local:8080
+    local: oatk-demo.app.homemadebycvg.local:8080
     github: christophevg/oatk
     image: /images/oatk-demo.png
     description: |
