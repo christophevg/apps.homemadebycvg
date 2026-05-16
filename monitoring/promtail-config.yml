@@ -1,0 +1,123 @@
+# Promtail configuration for log collection
+# Collects logs from supervisor, nginx, and application logs
+
+server:
+  http_listen_port: 9080
+  grpc_listen_port: 0
+
+positions:
+  filename: /var/log/promtail/positions.yaml
+
+clients:
+  - url: http://127.0.0.1:3100/loki/api/v1/push
+    tenant_id: apps-homemadebycvg
+
+scrape_configs:
+  # Supervisor-managed application logs (stdout/stderr)
+  - job_name: supervisor
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          job: supervisor
+          __path__: /var/log/supervisor/*.log
+    pipeline_stages:
+      # Parse supervisor log format
+      # Format: [timestamp] [process] [pid] [level] message
+      - regex:
+          expression: '^\[(?P<timestamp>\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2},\d{3})\]\[(?P<process>\w+)\]\[(?P<pid>\d+)\]\[(?P<level>\w+)\] (?P<message>.*)$'
+      - labels:
+          process:
+          level:
+      - timestamp:
+          source: timestamp
+          format: '2006-01-02 15:04:05,000'
+      - output:
+          source: message
+
+  # Nginx access logs
+  - job_name: nginx_access
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          job: nginx
+          log_type: access
+          __path__: /var/log/nginx/access.log
+    pipeline_stages:
+      # Parse nginx main log format
+      # Format: $remote_addr - $remote_user [$time_local] "$request" $status $body_bytes_sent "$http_host" - "$http_referer" "$http_user_agent" "$http_x_forwarded_for" rt=$request_time ...
+      - regex:
+          expression: '^(?P<remote_addr>[\d.:a-fA-F]+) - (?P<remote_user>\S+) \[(?P<time_local>[^\]]+)\] "(?P<method>\S+) (?P<path>\S+) (?P<protocol>[^"]+)" (?P<status>\d+) (?P<bytes>\d+) "(?P<host>[^"]*)" - "(?P<referer>[^"]*)" "(?P<user_agent>[^"]*)"'
+      - labels:
+          status:
+          host:
+      - timestamp:
+          source: time_local
+          format: '02/Jan/2006:15:04:05 -0700'
+      - static_labels:
+          log_type: access
+
+  # Nginx error logs
+  - job_name: nginx_error
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          job: nginx
+          log_type: error
+          __path__: /var/log/nginx/error.log
+    pipeline_stages:
+      # Parse nginx error log format
+      # Format: 2024/01/01 12:00:00 [error] 123#456: message
+      - regex:
+          expression: '^(?P<time>\d{4}/\d{2}/\d{2} \d{2}:\d{2}:\d{2}) \[(?P<level>\w+)\] (?P<pid>\d+)#(?P<tid>\d+): (?P<message>.*)$'
+      - labels:
+          level:
+      - timestamp:
+          source: time
+          format: '2006/01/02 15:04:05'
+      - static_labels:
+          log_type: error
+
+  # Application JSON logs (structured logging)
+  - job_name: app_json
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          job: apps
+          __path__: /var/log/apps/*.json
+    pipeline_stages:
+      - json:
+          expressions:
+            app: app
+            level: level
+            message: message
+            timestamp: timestamp
+      - labels:
+          app:
+          level:
+      - timestamp:
+          source: timestamp
+          format: RFC3339
+
+  # Docker/container logs (if running in container)
+  - job_name: docker
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          job: docker
+          __path__: /var/log/docker/*.log
+    pipeline_stages:
+      - json:
+          expressions:
+            log: log
+            stream: stream
+            time: time
+      - timestamp:
+          source: time
+          format: RFC3339Nano
+      - labels:
+          stream:

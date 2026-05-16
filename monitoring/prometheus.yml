@@ -1,0 +1,151 @@
+# Prometheus configuration for apps.homemadebycvg monitoring
+# Scrape metrics from system, infrastructure, and applications
+
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  external_labels:
+    monitor: 'apps-homemadebycvg'
+
+# Alertmanager configuration (optional - can be added later)
+# alerting:
+#   alertmanagers:
+#     - static_configs:
+#         - targets: ['localhost:9093']
+
+scrape_configs:
+  # Prometheus self-monitoring
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['127.0.0.1:9090']
+        labels:
+          app: 'prometheus'
+
+  # Node Exporter - System metrics (CPU, memory, disk, network)
+  - job_name: 'node'
+    static_configs:
+      - targets: ['127.0.0.1:9100']
+        labels:
+          app: 'node-exporter'
+          type: 'system'
+
+  # Nginx metrics (via nginx-prometheus-exporter on port 9114)
+  - job_name: 'nginx'
+    static_configs:
+      - targets: ['127.0.0.1:9114']
+        labels:
+          app: 'nginx'
+          type: 'infrastructure'
+
+  # Application metrics - Flask/Quart apps
+  # Each app exposes metrics on /metrics endpoint
+
+  - job_name: 'frontpage'
+    static_configs:
+      - targets: ['127.0.0.1:5000']
+        labels:
+          app: 'frontpage'
+          type: 'quart'
+          framework: 'quart'
+    metrics_path: '/metrics'
+    scrape_interval: 30s
+
+  - job_name: 'hello'
+    static_configs:
+      - targets: ['127.0.0.1:5001']
+        labels:
+          app: 'hello'
+          type: 'flask'
+          framework: 'flask'
+    metrics_path: '/metrics'
+    scrape_interval: 30s
+
+  - job_name: 'parking'
+    static_configs:
+      - targets: ['127.0.0.1:5002']
+        labels:
+          app: 'parking'
+          type: 'flask'
+          framework: 'flask'
+    metrics_path: '/metrics'
+    scrape_interval: 30s
+
+  - job_name: 'nationofpositivity'
+    static_configs:
+      - targets: ['127.0.0.1:5004']
+        labels:
+          app: 'nationofpositivity'
+          type: 'flask'
+          framework: 'baseweb'
+    metrics_path: '/metrics'
+    scrape_interval: 30s
+
+  - job_name: 'homemadebycvg'
+    static_configs:
+      - targets: ['127.0.0.1:5005']
+        labels:
+          app: 'homemadebycvg'
+          type: 'flask'
+          framework: 'flask'
+    metrics_path: '/metrics'
+    scrape_interval: 30s
+
+  - job_name: 'getijden'
+    static_configs:
+      - targets: ['127.0.0.1:5006']
+        labels:
+          app: 'getijden'
+          type: 'flask'
+          framework: 'flask'
+    metrics_path: '/metrics'
+    scrape_interval: 30s
+
+  - job_name: 'letmelearn'
+    static_configs:
+      - targets: ['127.0.0.1:5007']
+        labels:
+          app: 'letmelearn'
+          type: 'flask'
+          framework: 'baseweb'
+    metrics_path: '/metrics'
+    scrape_interval: 30s
+
+  - job_name: 'baseweb-demo'
+    static_configs:
+      - targets: ['127.0.0.1:5008']
+        labels:
+          app: 'baseweb-demo'
+          type: 'quart'
+          framework: 'baseweb'
+    metrics_path: '/metrics'
+    scrape_interval: 30s
+
+  - job_name: 'howifeel'
+    static_configs:
+      - targets: ['127.0.0.1:5009']
+        labels:
+          app: 'howifeel'
+          type: 'flask'
+          framework: 'flask-restful'
+    metrics_path: '/metrics'
+    scrape_interval: 30s
+
+  - job_name: 'oatk'
+    static_configs:
+      - targets: ['127.0.0.1:5010']
+        labels:
+          app: 'oatk'
+          type: 'flask'
+          framework: 'baseweb'
+    metrics_path: '/metrics'
+    scrape_interval: 30s
+
+  - job_name: 'roomz'
+    static_configs:
+      - targets: ['127.0.0.1:5011']
+        labels:
+          app: 'roomz'
+          type: 'quart'
+          framework: 'quart'
+    metrics_path: '/metrics'
+    scrape_interval: 30s

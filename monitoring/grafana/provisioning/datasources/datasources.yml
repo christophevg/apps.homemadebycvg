@@ -1,0 +1,34 @@
+# Grafana datasource provisioning
+# Configures Prometheus and Loki as data sources
+
+apiVersion: 1
+
+datasources:
+  # Prometheus - Primary metrics datasource
+  - name: Prometheus
+    type: prometheus
+    access: proxy
+    url: http://127.0.0.1:9090
+    uid: prometheus
+    isDefault: true
+    editable: false
+    jsonData:
+      timeInterval: "15s"
+      httpMethod: POST
+    version: 1
+
+  # Loki - Logs datasource
+  - name: Loki
+    type: loki
+    access: proxy
+    url: http://127.0.0.1:3100
+    uid: loki
+    editable: false
+    jsonData:
+      maxLines: 1000
+      derivedFields:
+        # Link to Prometheus metrics from logs
+        - name: Metrics
+          matcherRegex: "app=(\\w+)"
+          url: "http://127.0.0.1:9090/graph?g0.expr=app_request_count_total{app=\"$1\"}"
+    version: 1

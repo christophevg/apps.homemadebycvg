@@ -107,3 +107,53 @@ frontpage:
 
 format:
 	uv run --project frontpage ruff check --fix frontpage/
+
+# === MONITORING ===
+
+.PHONY: monitoring-status prometheus-logs grafana-logs loki-logs grafana-open grafana-forward prometheus-forward health-check
+
+# Check monitoring stack status
+monitoring-status:
+	@echo "=== Monitoring Stack Status ==="
+	$(RUNTIME) exec $(CONTAINER) supervisorctl status prometheus grafana loki promtail node_exporter nginx_exporter
+
+# View Prometheus logs
+prometheus-logs:
+	$(RUNTIME) exec $(CONTAINER) tail -f /var/log/supervisor/prometheus*.log
+
+# View Grafana logs
+grafana-logs:
+	$(RUNTIME) exec $(CONTAINER) tail -f /var/log/supervisor/grafana*.log
+
+# View Loki logs
+loki-logs:
+	$(RUNTIME) exec $(CONTAINER) tail -f /var/log/supervisor/loki*.log
+
+# View Promtail logs
+promtail-logs:
+	$(RUNTIME) exec $(CONTAINER) tail -f /var/log/supervisor/promtail*.log
+
+# Open Grafana dashboard (requires port forward)
+grafana-open:
+	@echo "Opening Grafana dashboard..."
+	@echo "If running locally, visit: http://localhost:3000"
+	@echo "If remote, run: make grafana-forward"
+	@open http://localhost:3000 2>/dev/null || xdg-open http://localhost:3000 2>/dev/null || true
+
+# Port forward Grafana for external access
+grafana-forward:
+	@echo "Forwarding Grafana port 3000 to localhost:3000"
+	$(RUNTIME) port-forward $(CONTAINER) 3000:3000
+
+# Port forward Prometheus for external access
+prometheus-forward:
+	@echo "Forwarding Prometheus port 9090 to localhost:9090"
+	$(RUNTIME) port-forward $(CONTAINER) 9090:9090
+
+# Health check all apps
+health-check:
+	@echo "Checking health endpoints..."
+	@for port in 5000 5001 5002 5004 5005 5006 5007 5008 5009 5010 5011; do \
+		echo -n "Port $$port: "; \
+		$(RUNTIME) exec $(CONTAINER) curl -s -o /dev/null -w "%{http_code}" http://127.0.0.1:$$port/health 2>/dev/null || echo "N/A"; \
+	done
