@@ -78,6 +78,7 @@ RUN set -e; \
 
 # Copy nginx configuration
 COPY nginx.conf /etc/nginx/nginx.conf
+COPY block.conf /etc/nginx/block.conf
 
 # Copy supervisor configuration
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
