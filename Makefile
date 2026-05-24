@@ -96,7 +96,9 @@ init:
 add:
 	git submodule add $(REPO)
 
-update:
+update: update-submodules rebuild
+
+update-submodules:
 	git submodule foreach git pull origin master
 
 # Frontpage
